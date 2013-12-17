@@ -1,0 +1,254 @@
+/*
+ * Theme Name:     NeaLoca
+ * Theme URI:      http://example.com/
+ * Description:    Theme de nealoca base sur twentythirteen
+ * Author:         nofh
+ * Author URI:     http://example.com/about/
+ * Template:       twentythirteen                             
+ * Version:        0.1.0
+ * */
+
+/* heritage parental */
+@import url("../twentythirteen/style.css");
+
+/* style perso */
+/* BODY */
+body
+{
+    font-family:"Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 13px; line-height: 1.4; 
+	background:#f6f6f6 url(images/background.png);
+	color:#444444;
+}
+
+h1, h2, h3
+{
+    color: #6fbfec;
+}
+
+/* HEADER TOP */
+.header-top
+{
+    background-image:url(images/header-top.png); 
+    background-position:bottom left; 
+    background-repeat: repeat-x; 
+    background-color: #697884;
+    padding: 8px 0 0 0px;
+   // height: 40px;
+}
+
+.icon-contact i
+{
+
+    color: #fff;
+}
+
+.icon-contact a
+{
+    padding: 0 0 0 5px;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    //font-weight:bold;
+}
+
+.icon-contact i:hover
+{
+    color: #ddd;
+}
+
+.icon-contact a:hover
+{
+    color: #ddd;
+}
+
+nav
+{
+    background-image:url(images/header-bg.png); 
+    background-position: bottom left; 
+    background-repeat: repeat-x;
+    background-color: #6fbfec;
+    height: 80px;
+
+}
+
+.top-bar
+{
+    background-color: transparent;
+ 	margin-left:6px;
+	font-size:15px;
+	color:#fff;
+	text-decoration:none;
+	line-height:1;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+	border:1px solid rgba(0, 0, 0, 0);    margin: 20px 0 0 0;
+}
+
+.top-bar.expanded .title-area
+{
+    background-color: #697884;
+}
+
+.top-bar-section ul 
+{
+    background-color: transparent;
+}
+
+.top-bar-section ul li
+{
+    margin-left: 20px;
+}
+
+/* selection et hover du small et large */
+.top-bar-section ul li.current-menu-item > a, .top-bar-section li a:hover:not(.button)
+{
+border-top:1px solid rgba(0, 0, 0, .4); 
+	border-left:1px solid rgba(0, 0, 0, .5);
+	border-right:1px solid rgba(0, 0, 0, .5);
+	border-bottom:1px solid rgba(0, 0, 0, .7);
+	-moz-box-sizing: padding-box;
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box;
+	background-image:url(images/navigation-hover.png);
+	background-repeat:repeat-x;
+	background-position:top left;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+    background-color: #697884;
+
+}
+
+.top-bar-section li a:not(.button) 
+{
+    background-color: transparent;
+}
+
+.top-bar-section ul li > a /* non selectionner small et large le fond est transparent */
+{
+    background-image:url(images/header-bg.png); 
+    background-position: bottom left; 
+    background-repeat: repeat-x;
+}
+
+
+#logo
+{
+    margin-top: -20px;
+    height: 78px;
+}
+
+/* CORPS */
+.panel, .top 
+{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.panel
+{
+    margin-top: 20px;
+}
+
+.panel.top
+{
+    margin-top: 35px;
+}
+
+.panel.callout
+{
+    border-color: #697884;
+    background-color: #697884;
+    margin: 15px 0 25px 0;
+}
+/* SLIDER */
+.orbit-container .orbit-timer /* supp l'affichage du timer */
+{
+    width: 0%;
+}
+
+.orbit-bullets
+{
+    position:absolute;
+    left:15px;
+    top:15px;
+    z-index: 9999;
+}
+
+.orbit-container .orbit-slides-container img
+{
+    max-width: 100%;
+	height: auto;
+}
+
+/* GALLERIE */
+
+/* Clearing Docs */
+.clearing-thumbs { list-style: none; }
+.clearing-thumbs li {     clear: none !important; }
+/* LOCALISATION */
+
+#map-canvas
+{   
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+#map-canvas img {
+    max-width: none; //recupere le zoom de google maps
+}
+#controles
+{
+    background-color: red;
+}
+/* FOOTER */
+footer
+{
+    background-color: #252425;
+    font-family: "PT Sans", sans-serif; 
+    font-weight: bold;
+    color: #fff;
+}
+.side-nav li a
+{
+    color:#c5c5c5;
+}
+
+footer h4, footer h5, footer h6 
+{
+    color:#fff; 
+    text-transform:uppercase; 
+    padding-top: 15px;
+}
+
+footer #copyright   
+{
+    line-height: 1;
+    color:#888888;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.separateur
+{
+
+    border: 1px solid;
+    border-color: #585858;
+    margin-bottom: 15px;
+}
+
+#scrollToTop
+{
+    background:url(images/back-to-top.png) 0px -12px no-repeat; 
+    text-indent:-999999px; 
+	cursor: pointer; 
+	padding:30px 0px; 
+	margin:-30px 0px; 
+	width:62px;
+	display:block;  
+	float: right; 
+}
+
+#scrollToTop:hover 
+{
+    background-position:0px -125px;
+}
